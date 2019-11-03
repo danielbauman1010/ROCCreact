@@ -8,9 +8,9 @@ export default class Main extends React.Component {
   render(){
     return (
       <div>
-        <button onClick={(e) => this.props.setPage(e, 'Join')}>Join</button>
+        <button onClick={(e) => this.props.setPage(e, 'join')}>Join</button>
         <p></p>
-        <button onClick={(e) => this.props.setPage(e, 'Join')}>Create</button>
+        <button onClick={(e) => this.props.setPage(e, 'create')}>Create</button>
       </div>);
   }
 }

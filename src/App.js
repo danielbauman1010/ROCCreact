@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Main from './Main.js'
+import Main from './Main.js';
 class App extends React.Component {
 
   constructor(props){
@@ -16,7 +16,9 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        {this.state.page == 'main' && (<Main setPage={this.setPage}/>)}
+        {this.state.page === 'main' && (<Main setPage={(e, newpage) => this.setPage(e, newpage)}/>)}
+        {this.state.page === 'join' && (<h1>JOIN PAGE</h1>)}
+        {this.state.page === 'create' && (<h1>CREATE PAGE</h1>)}
       </div>
     );
   }
